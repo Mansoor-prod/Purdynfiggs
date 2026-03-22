@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #F5F0E8;
+  --green: #1C3A2A;
+  --yellow: #EDE87A;
+  --amber: #8B5E3C;
+  --peach: #F5EDE0;
+  --blue: #EBF4F5;
+  --sage: #EBF0EB;
+  --text: #1A1A1A;
+}
+
+body {
+  color: var(--text);
+  background: var(--cream);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.premium-blur {
+  backdrop-filter: blur(8px);
+  background-color: rgba(245, 240, 232, 0.8);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(28, 58, 42, 0.1);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
